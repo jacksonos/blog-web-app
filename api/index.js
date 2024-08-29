@@ -3,10 +3,10 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 dotenv.config();
-
 const app = express();
+
 mongoose
-  .connect(process.env.mongoUrl)
+  .connect(process.env.MONGO)
   .then(() => {
     console.log('MDB connected');
   })
