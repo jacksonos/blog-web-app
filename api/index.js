@@ -19,6 +19,7 @@ mongoose
     console.log(err);
   });
 
+
 //set server port to running
 app.listen(3000, () => {
   console.log('Server is running on port 3000 with nodemon 😈👌');
@@ -33,3 +34,5 @@ app.use((err, req, res, next) => {
   const message = err.message || 'Internal Server Error';
   res.status(statusCode).json({ success: false, statusCode, message });
 });
+
+
